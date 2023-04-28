@@ -1,0 +1,7 @@
+{
+  "name": "操作系统",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
