@@ -1,10 +1,12 @@
 {
-  "name": "操作系统",
+  "name": "os",
   "packageManager": "yarn@3.5.0",
   "dependencies": {
+    "readline-sync": "^1.4.10",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
-    "@types/node": "^18.16.2"
+    "@types/node": "^20.2.1",
+    "@types/readline-sync": "^1.4.4"
   }
 }
