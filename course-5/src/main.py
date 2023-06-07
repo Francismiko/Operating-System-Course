@@ -42,7 +42,7 @@ class SimplePageFaultHandler(PageFaultHandler):
 
     def handle_page_fault(self, page_number):
         print("Page fault occurred for page", page_number)
-        frame_number = page_number
+        frame_number = page_number % frame_count
         data = "Data for page " + str(page_number)
         self.memory.write(frame_number, data)
         return frame_number
