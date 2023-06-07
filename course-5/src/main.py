@@ -47,7 +47,6 @@ class SimplePageFaultHandler(PageFaultHandler):
         self.memory.write(frame_number, data)
         return frame_number
 
-
 class MMU:
     def __init__(self, page_table, memory, page_fault_handler):
         self.page_table = page_table
@@ -68,9 +67,9 @@ class MMU:
         return physical_address
 
 
-# 模拟页表大小为16，物理内存有8个帧
-page_table_size = 8
-frame_count = 8
+# 模拟页表大小为32，物理内存有32个帧
+page_table_size = 32
+frame_count = 32
 
 # 创建页表、内存和页错误处理器
 page_table = PageTable(page_table_size, frame_count)
